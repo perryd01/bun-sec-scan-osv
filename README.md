@@ -76,6 +76,21 @@ Customize the test file as needed.
 bun test
 ```
 
+## Linting & Formatting
+
+This template uses [Oxc](https://oxc.rs) tooling for code quality:
+
+- [`oxlint`](https://oxc.rs/docs/guide/usage/linter.html) for linting
+- [`oxfmt`](https://oxc.rs/docs/guide/usage/formatter.html) for formatting
+
+```bash
+bun run lint        # lint the codebase
+bun run fmt         # format all files in place
+bun run fmt:check   # verify formatting without writing (used in CI)
+```
+
+Configuration lives in `.oxlintrc.json` and `.oxfmtrc.json`.
+
 ## Publishing Your Provider
 
 Publish your security scanner to npm:
